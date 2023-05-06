@@ -18,6 +18,16 @@ const LEFT_ARM = (
     style={{ width: "110px", height: "10px", background:"black" ,position: 'absolute', top: "150px", right: "0px", rotate: "210deg" }}
   />
 )
+const RIGHT_LEG = (
+  <div
+    style={{ width: "100px", height: "10px", background:"black" ,position: 'absolute', top: "210px", right: "-90px", rotate: "60deg", transformOrigin:"left bottom" }}
+  />
+)
+const LEFT_LEG = (
+  <div
+    style={{ width: "100px", height: "10px", background:"black" ,position: 'absolute', top: "210px", right: "-90px", rotate: "120deg", transformOrigin:"left bottom" }}
+  />
+)
 const HangmanDrawing = () => {
   return (
       <div style={{ position: "relative" }}>
@@ -25,6 +35,8 @@ const HangmanDrawing = () => {
         {BODY}
         {RIGHT_ARM}
         {LEFT_ARM}
+        {RIGHT_LEG}
+        {LEFT_LEG}
         <div style={{ height: "50px", width: "10px", background:"black", position: "absolute" ,top: 0, right: 0}}></div>
         <div style={{ height: "10px", width: "200px", background:"black", marginLeft:"120px"}}></div>
         <div style={{ height: "400px", width: "10px", background:"black", marginLeft:"120px"}}></div>
